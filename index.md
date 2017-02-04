@@ -11,6 +11,7 @@ Bu site Akademik Bilişim 2017 kurslarından R ile Veri Analizi'nin dökümanlar
 
 + [Gelişmiş örnek: Aksaray seçim raporu](il_bazi_rapor_Aksaray.html)
 + [dplyr Dökümanları](dokumanlar/dokuman_dplyr.html)
++ [dplyr Alıştırmaları](dokumanlar/dokuman_dplyr_alistirma.html) ([Çözümler](dokumanlar/dokuman_dplyr_alistirma_cozumler.html))
 + [ggplot2 Dökümanları](dokumanlar/dokuman_ggplot2.html)
 + [Örnek Rmd dosyası](dokumanlar/ornek.Rmd)
 
