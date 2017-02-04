@@ -1,0 +1,51 @@
+---
+title: "Örnek Rmd Dosyası"
+author: Buraya isminizi yazın
+date: 5 Şubat 2017
+header-includes:
+    - \usepackage{amsmath}
+    - \usepackage{tikz}
+    - \usetikzlibrary{matrix,fit,backgrounds}
+output:
+  html_document:
+    toc: true
+    toc_depth: 1
+  pdf_document:
+    toc: true
+    toc_depth: 1
+---
+
+# Markdown nedir? (Başlık 1)
+
+Markdown çok basit ve yalın bir işaretleme dilidir. Bazı özel semboller yazı formatlarını düzenlemeye yarar. Örneğin `#` işareti büyük başlık getirir.
+
+## Rmarkdown nedir? (Başlık 2)
+
+Rmarkdown, R ve markdown'ın beraber kullanıldığı bir formattır. ".Rmd" uzantılı dosyalar üzerinde çalışır. Bu dosyalar `rmarkdown` paketi ve pandoc vasıtasıyla docx, html, pdf, odx gibi formatlara çevrilir.
+
+### R kodu nasıl yazılır? (Başlık 3)
+
+R kodu Rmd dosyasının içerisinde özel bir alana yazılır (Örnek dosyasını inceleyiniz.). Bu alandaki her R kodu aksi belirtilmedikçe çalıştırılır ve çıktısı kodun aşağısına yazılır.
+
+```{r}
+yaricap<-2
+pi*yaricap^2
+```
+
+Cümlenin içine de ifadeler yardımıyla yazılabilir. Yukarıdaki değer `r pi*yaricap^2`. (Rmd dosyasını kontrol ediniz)
+
+### Matematiksel formüller nasıl yazılır?
+
+Dolar sembollerinin içerisine yazarak matematiksel ifadeleri LaTeX şeklinde ifade edebilirsiniz. Örneğin Euler denklemi.
+
+$$e^{i\pi} + 1 = 0$$
+
+Eğer tek dolar sembolü kullanılırsa matematiksel ifadeler cümle içerisine de girebilir. Örneğin $e^{i\pi} + 1 = 0$.
+
+### Rmd dosyasından html dosyasına nasıl dönüştürülür?
+
+Eğer rmarkdown ve pandoc yüklüyse `render` komutu kullanılır. Aşağıdaki komut bilgisayardan bir dosya seçip html çıktısı almanızı sağlar.
+
+```{r eval=FALSE}
+rmarkdown::render(file=file.choose(),output_format="html")
+```
