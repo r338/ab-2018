@@ -9,7 +9,7 @@ Bu site Akademik Bilişim 2017 kurslarından R ile Veri Analizi'nin dökümanlar
 
 5 Şubat - R tidyverse ile veri hazırlama, görselleştirme ve raporlama.
 
-+ [Gelişmiş örnek: Aksaray seçim raporu](il_bazi_rapor_Aksaray.html)
++ [Gelişmiş örnek: Aksaray seçim raporu](dokumanlar/il_bazi_rapor_Aksaray.html)
 + [dplyr Dökümanları](dokumanlar/dokuman_dplyr.html)
 + [dplyr Alıştırmaları](dokumanlar/dokuman_dplyr_alistirma.html) ([Çözümler](dokumanlar/dokuman_dplyr_alistirma_cozumler.html))
 + [ggplot2 Dökümanları](dokumanlar/dokuman_ggplot2.html)
