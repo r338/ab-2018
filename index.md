@@ -27,7 +27,7 @@ Gün 4 - Uygulama projelerine ayrılmıştır. Bu projelerin amacı ilk 3 gün �
 
 Bu bölümde 2 kişilik katılımcı gruplarının veri projelerini bulacaksınız. Bu projeler R ve Rmarkdown vasıtasıyla okuyanlar tarafından R'da tekrar üretilebilir şekilde hazırlanmıştır<sup>[1](#myfootnote1)</sup>. Veri dosyaları proje linklerinin yanında bulunabilir.
 
-_(İsim sırasına göre)_
+_(Proje isim sırasına göre)_
 
 + [2004’ten günümüze Türkiye’de İthal Lüks Otomobil Satışları](projeler/oto.html) ([Veri Dosyası](https://raw.githubusercontent.com/r338/ab-2017/master/projeler/OtomobilSatisRefined.xlsx)) (Sefa Erçek - Haluk Yapıcıoğlu)
 + [Belediyelerde içme suyu şebekesi için çekilen suyun 1994-2014 yılı arasındaki kaynak analizi](projeler/Sular_07022017.html) ([Veri Dosyası](https://raw.githubusercontent.com/r338/ab-2017/master/projeler/sular.csv)) (Utku Erdoğan - İsmail Yoşumaz)
@@ -48,11 +48,8 @@ Aşağıdaki veri projeleri çeşitli teknik sebeplerle bütün süreçleri tama
 + [Öğrenci sınav Verilerinden Not elde etme ve grafik çalışması](projeler/YA.html) (Verisi bulunmuyor.) (Yasin Akman)
 + [Türkiye'deki üniversitelerde bulunan akademisyen sayısı ve akademisye başına düşen öğrenci sayısının R ile değerlendirilmesi.](projeler/projerapor.pdf) ([Veri Dosyası](https://raw.githubusercontent.com/r338/ab-2017/master/projeler/ogrencisayisi.xls)) ([Veri Dosyası 2](https://raw.githubusercontent.com/r338/ab-2017/master/projeler/akademisyensayisi.xlsx)) (Halit Irmak - Melih Can Şahin)
 
-+ Hava yolu yatırım analizi: OECD ülkelerinin hava yolu taşımacılığı için yapmış olduğu yatırımlarının analiz edilmesi. (Kadir Büyüközkan - Hasancan Zubaroğlu)
+<a name="myfootnote1">1</a>: Bazı projelerin açıklamalarında yüklenmesi gereken paketlerin listeleri bulunmayabilir. Bu durumda `tidyverse` paketini yükleyin.
 
 ## Teşekkürler
 
 ![](kursfoto.JPG)
-
-
-<a name="myfootnote1">1</a>: Bazı projelerin açıklamalarında yüklenmesi gereken paketlerin listeleri bulunmayabilir. Bu durumda `tidyverse` paketini yükleyin.
