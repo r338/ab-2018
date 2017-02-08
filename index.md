@@ -25,17 +25,13 @@ Gün 3 - R ile Veri Analizi ve Veri Madenciliğine Giriş (6 Şubat)
 
 ## Projeler
 
-Bu bölümde 2 kişilik katılımcı gruplarının veri projelerini bulacaksınız.
+Bu bölümde 2 kişilik katılımcı gruplarının veri projelerini bulacaksınız. Bu projeler R ve Rmarkdown vasıtasıyla hazırlanmıştır ve okuyucular tarafından tekrar üretilebilir şekilde hazırlanmıştır. Veriler proje dosyalarının yanında verilmektedir. Proje isimlerine göre sıralanmıştır.
 
 Henüz proje isimlerini açıklamayanlar.
 
-+ Zeycan Helvacı - Tolga Kankılıç
-+ Alev Elçi - Ömer Faruk Yılmaz
-+ Sefa Erçek - Haluk Yapıcıoğlu
-
 Proje isimleri.
 
-+ Belediyelerde içme suyu şebekesi için çekilen suyun 1994-2014 yılı arasındaki kaynak analizi (Utku Erdoğan - İsmail Yoşumaz)
++ [Belediyelerde içme suyu şebekesi için çekilen suyun 1994-2014 yılı arasındaki kaynak analizi](projeler/Sular_07022017.html) ([Veri](projeler/sular.csv)) (Utku Erdoğan - İsmail Yoşumaz)
 + Bitki çeşitliliğinin yükseklik gradientine bağlı olarak incelenmesi. (Nihal Kenar - Demet Erdönmez)
 + Hava yolu yatırım analizi: OECD ülkelerinin hava yolu taşımacılığı için yapmış olduğu yatırımlarının analiz edilmesi. (Kadir Büyüközkan - Hasancan Zubaroğlu)
 + IMDB Ratings: IMDB verilerini kullanarak, oyuncular, yonetmenler, odullu olup olmamasinin IMDB puanlarina etkileri. (Sena Önen - Deniz Esin Emer)
