@@ -18,7 +18,10 @@ Gün 2 - R tidyverse ile veri hazırlama, görselleştirme ve raporlama. (5 Şub
 
 Gün 3 - R ile Veri Analizi ve Veri Madenciliğine Giriş (6 Şubat)
 
-4. Gün tamamen projelere ayrılmıştır. Aşağıda bulabilirsiniz.
++ PCA Kodları [1](https://raw.githubusercontent.com/r338/ab-2017/master/dokumanlar/pca.R)[2](https://raw.githubusercontent.com/r338/ab-2017/master/dokumanlar/2.R)[Veri](https://archive.ics.uci.edu/ml/machine-learning-databases/housing/)
++ Önerilen Kaynaklar [1](http://www-bcf.usc.edu/~gareth/ISL/)[2](http://www.ievbras.ru/ecostat/Kiril/R/Biblio/R_eng/R%20dummies.pdf)
+
+\4. Gün tamamen projelere ayrılmıştır. Aşağıda bulabilirsiniz.
 
 ## Projeler
 
