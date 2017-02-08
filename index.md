@@ -2,18 +2,23 @@ Bu site Akademik Bilişim 2017 kurslarından R ile Veri Analizi'nin dökümanlar
 
 ## Dökümanlar
 
-4 Şubat - R'ın temelleri.
+Gün 1 - R'ın temelleri. (4 Şubat)
 
 + [R'a Hızlı Başlangıç](dokumanlar/RHizliGiris.pdf)
++ [R Kodları](https://raw.githubusercontent.com/r338/ab-2017/master/dokumanlar/baslama.R)
 + [Temel R Komutları için Alıştırmalar](dokumanlar/dokuman_temel_alistirma.html) ([Çözümler](dokumanlar/dokuman_temel_alistirma_cozumler.html))
 
-5 Şubat - R tidyverse ile veri hazırlama, görselleştirme ve raporlama.
+Gün 2 - R tidyverse ile veri hazırlama, görselleştirme ve raporlama. (5 Şubat)
 
 + [Gelişmiş örnek: Aksaray seçim raporu](dokumanlar/il_bazi_rapor_Aksaray.html)
 + [dplyr Dökümanları](dokumanlar/dokuman_dplyr.html)
 + [dplyr Alıştırmaları](dokumanlar/dokuman_dplyr_alistirma.html) ([Çözümler](dokumanlar/dokuman_dplyr_alistirma_cozumler.html))
 + [ggplot2 Dökümanları](dokumanlar/dokuman_ggplot2.html)
 + [Örnek Rmd dosyası](https://raw.githubusercontent.com/r338/ab-2017/master/dokumanlar/ornek.Rmd)
+
+Gün 3 - R ile Veri Analizi ve Veri Madenciliğine Giriş (6 Şubat)
+
+4. Gün tamamen projelere ayrılmıştır. Aşağıda bulabilirsiniz.
 
 ## Projeler
 
