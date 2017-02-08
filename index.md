@@ -25,12 +25,13 @@ Gün 3 - R ile Veri Analizi ve Veri Madenciliğine Giriş (6 Şubat)
 
 ## Projeler
 
-Bu bölümde 2 kişilik katılımcı gruplarının veri projelerini bulacaksınız. Bu projeler R ve Rmarkdown vasıtasıyla hazırlanmıştır ve okuyucular tarafından tekrar üretilebilir şekilde hazırlanmıştır. Veriler proje dosyalarının yanında verilmektedir. Proje isimlerine göre sıralanmıştır.
+Bu bölümde 2 kişilik katılımcı gruplarının veri projelerini bulacaksınız. Bu projeler R ve Rmarkdown vasıtasıyla hazırlanmıştır ve okuyucular tarafından tekrar üretilebilir şekilde hazırlanmıştır^[Bazı projelerin açıklamalarında yüklenmesi gereken paketlerin listeleri bulunmayabilir. Bu durumda `tidyverse` paketini yükleyin.]. Veriler proje dosyalarının yanında verilmektedir. Proje isimlerine göre sıralanmıştır.
 
++ [2004’ten günümüze Türkiye’de İthal Lüks Otomobil Satışları](projeler/oto.html) ([Veri Dosyası](https://raw.githubusercontent.com/r338/ab-2017/master/projeler/OtomobilSatisRefined.xlsx)) (Sefa Erçek - Haluk Yapıcıoğlu)
 + [Belediyelerde içme suyu şebekesi için çekilen suyun 1994-2014 yılı arasındaki kaynak analizi](projeler/Sular_07022017.html) ([Veri Dosyası](https://raw.githubusercontent.com/r338/ab-2017/master/projeler/sular.csv)) (Utku Erdoğan - İsmail Yoşumaz)
-+ [Bitki çeşitliliğinin yükseklik gradientine bağlı olarak incelenmesi.](projeler/nihaldemet.html)([Veri Dosyası](https://raw.githubusercontent.com/r338/ab-2017/master/projeler/nregresyon.csv)) (Nihal Kenar - Demet Erdönmez)
-+ [IMDB Ratings: IMDB verilerini kullanarak, oyuncular, yonetmenler, odullu olup olmamasinin IMDB puanlarina etkileri.](projeler/projesenaesin.html)([Veri Dosyası](https://raw.githubusercontent.com/r338/ab-2017/master/projeler/movies.csv)) (Sena Önen - Deniz Esin Emer)
-+ Rüzgar Hızı analiz çalışması (Zeynep Özger - İsmail Kırbaş)
++ [Bitki çeşitliliğinin yükseklik gradientine bağlı olarak incelenmesi.](projeler/nihaldemet.html) ([Veri Dosyası](https://raw.githubusercontent.com/r338/ab-2017/master/projeler/nregresyon.csv)) (Nihal Kenar - Demet Erdönmez)
++ [IMDB Ratings: IMDB verilerini kullanarak, oyuncular, yonetmenler, odullu olup olmamasinin IMDB puanlarina etkileri.](projeler/projesenaesin.html) ([Veri Dosyası](https://raw.githubusercontent.com/r338/ab-2017/master/projeler/movies.csv)) (Sena Önen - Deniz Esin Emer)
++ [Rüzgar Hızı analiz çalışması](projeler/ruzgar.html) ([Veri Dosyası](https://raw.githubusercontent.com/ismkir/myrepo1/master/arv.csv)) (Zeynep Özger - İsmail Kırbaş)
 + Species distribution modeling with R (Zeycan Helvacı)
 + TUİK-ARGE Faaliyetleri İstatistikleri (Merve Yavuz - Funda Güven)
 + Türkiyedeki üniversitelerde bulunan akademisyen sayısı ve akademisye başına düşen öğrenci sayısının R ile değerlendirilmesi. (Halit Irmak - Melih Can Şahin)
