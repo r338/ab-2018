@@ -50,6 +50,6 @@ Aşağıdaki veri projeleri çeşitli teknik sebeplerle bütün süreçleri tama
 
 <a name="myfootnote1">1</a>: Bazı projelerin açıklamalarında yüklenmesi gereken paketlerin listeleri bulunmayabilir. Bu durumda `tidyverse` paketini yükleyin.
 
-## Teşekkürler
+## Muhteşem Kursiyerler
 
 ![](kursfoto.JPG)
