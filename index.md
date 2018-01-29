@@ -19,3 +19,7 @@ Gün 2 - Tidverse temelleri. (28 Ocak)
 
 + [tidyverse resmi sitesi](tidyverse.org)
 + [tidyverse Giris](dokumanlar/tidyverse_temel.html)
+
+Gün 3 - Veri Madenciliği (29 Ocak)
+
++ [Survey Data](dokumanlar/survey_data.R)
