@@ -23,3 +23,4 @@ Gün 2 - Tidverse temelleri. (28 Ocak)
 Gün 3 - Veri Madenciliği (29 Ocak)
 
 + [Survey Data](dokumanlar/survey_data.R)
++ [Sunum](dokumanlar/Descriptive_Analysis_with_Survey_Data.pdf)
