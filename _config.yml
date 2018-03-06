@@ -2,3 +2,6 @@ theme: jekyll-theme-cayman
 title: R ile Veri Analizi Eğitimi
 description: Akademik Bilişim 2018 Eğitimleri (27-30 Ocak 2018)
 show_downloads: false
+encoding: utf-8
+exclude:
+    - "*.Rmd"
