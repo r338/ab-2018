@@ -1,0 +1,107 @@
+---
+title: "R Notebook"
+author: "Berna soysal Elif uygun"
+output:
+  html_document:
+    df_print: paged
+  pdf_document: default
+---
+
+
+Veri setimiz Portekiz'e ait bir bankanýn müþteri bilgilerini içermektedir. Bankada olan kampanyalar için bu müþteriler telefon ile aranmaktadýr. Eðer müþteri kampanyaya ait ürünü almayý kabul ederse birkaç defa daha iletiþime geçilmektedir. Bank.csv tablomuzda 4521 tane örnek (instance) olup, 16 + karar (y) niteliði (attribute) bulunmaktadýr. Bu nitelikler örneklere ait özelliklerdir ve veriyi tanýmamýza yardýmcý olur. Bu niteliklere bakýlacak olursa;
+
+age: Müþterilere ait yaþ bilgisini içerir. Sayýsal bir deðerdir.
+job: Müþterilerin meslek bilgisini içerir.Kategorik olup admin, unknown, unemployed, management, housemaid, entrepreneur, student, blue-collar, self-employed, retired, techinician, services þeklinde 12 çeþittir.
+marital: Müþterilerin medeni durumlarýný içermektedir. Kategorik olup married, divorced, single þeklinde 3 çeþittir.
+education: Müþterilere ait eðitim bilgilerini içermektedir.Kategorik olup unknown, secondary, primary, tertiary þeklinde 4 çeþittir.
+default: Müþterinin bankada kredisi olup olmadýðýnýn bilgisini içerir. Kategorik olup Yes, No þeklinde 2 çeþittir.
+balance: Müþterinin ortalama yýllýk bakiyesini euro olarak ifade etmektedir. Sayýsal bir deðerdir.
+housing: Müþterinin konut kredisi olup olmadýðýnýn bilgisini içerir. Kategorik olup Yes, No þeklinde 2 çeþittir.
+loan: Müþterinin bireysel kredisinin olup olmadýðýnýn bilgisini içerir.Kategorik olup Yes, No þeklinde 2 çeþittir.
+contact: Müþteriye ait iletiþim tipini belirtir. Kategorik olup unknown, telephone, cellular þeklinde 3 çeþittir.
+day: Bu kampanya için müþteriyle en son iletiþime geçirilen ayýn gün bilgisini içerir. Sayýsal bir deðerdir.
+month: Bu kampanya için müþteriyle en son iletiþime geçirilen ayýn bilgisini içerir. Kategorik bir deðer olup jan,feb,mar,apr,may,june,july,aug,sep,oct,nov,dec þeklinde 12 çeþittir.
+duration:Bu kampanya için müþteriyle en son iletiþime geçirilen görüþmenin saniye olarak süresini içerir. Sayýsal bir deðerdir.
+campaign: Bu kampanyada bir müþteri için kaç kez iletiþime geçtiðinin bilgisini içerir. Sayýsal bir deðerdir.
+pdays: Bir önceki kampanyada müþteri ile en son iletiþime geçilmesinden sonra kaç gün geçtiðini gösterir. Sayýsal bir deðerdir. Burada bulunan -1 deðeri daha önce iletiþime geçilmediðini göstermektedir.
+previous: Bir önceki kampanyada müþteri ile iletiþime kaç defa geçirildiðinin bilgisini içerir. Sayýsal bir deðerdir.
+poutcome: Müþterinin bir önceki kampanyadaki ürünü alýp almadýðýnýn sonucunu içerir. Kategorik olup unknown, other, failure, success þeklinde 4 çeþittir.
+y: Müþteri ile ilgili kredi verilip verilmemesinin kararýnýn verildiði alandýr. Kategorik olup Yes, No þeklinde 2 çeþittir.
+```{r}
+data<-read.table("Banka.txt",header=T,sep="\t")
+head(data)
+plot(data)
+
+```
+
+```{r}
+library(rpart)
+library(rpart.plot)
+data<-read.table("Banka.txt",header=T,sep="\t")
+model<-rpart(y~.,data=data,method="class")
+prp(model,cex=0.9,box.palette=c("red","palegreen3"),extra=1)
+
+
+
+```
+
+
+
+
+
+```{r}
+
+size<- nrow(data)*0.8
+index<-sample(1:nrow(data),size=size)
+training<-data[index,]
+test<-data[-index,]
+head(training)
+head(test)
+nrow(training)
+
+model<-rpart(y~.,data=training,method="class")
+prediction<- predict(model,test,type="class")
+head(prediction)
+prp(model,cex=0.9,box.palette=c("red","palegreen3"),extra=1)
+
+confusion.matrix <- table(prediction, test$y)
+print(confusion.matrix)
+```
+Test veri kümeside toplamda 816 müþterinin mevduatý satýn almadýðý (no) bilinirken; bunlarýn 758 tanesi satýn almaz (no), 58 tanesi de satýn alýr (yes) þeklinde tahmin edilmiþtir. (1.satýr)
+Training veri kümesinde toplamda 89 müþterinin mevduatý satýn aldýðý bilinirken; bunlarýn 38 tanesi satýn almaz (no), 51 tanesi de satýn alýr (yes) þeklinde tahmin edilmiþtir. (2.satýr)
+905 örneklemli veri kümesi baþarý oraný %89.39 olarak bulunmuþtur.
+
+
+
+
+```{r}
+
+model2 <- glm(y~.,family=binomial(link='logit'),data=training)
+summary(model2)
+predict2<- ifelse(predict(model2,test,type="response")>0.5,'YES','NO')
+head(predict2)
+confusion_matrix2<-table(predict2,test$y)
+confusion_matrix2
+
+```
+Confusion Matrix Ýliþkili istatistiklerle gözlemlenen ve tahmin edilen sýnýflarýn çapraz tablolarýný hesaplar.
+
+Test veri kümesinde toplamda 836 müþterinin mevduatý satýn almadýðý (no) bilinirken; bunlarýn 768 tanesi satýn almaz (no), 68 tanesi de satýn alýr (yes) þeklinde tahmin edilmiþtir. (1.satýr)
+Training veri kümesinde toplamda 69 müþterinin mevduatý satýn aldýðý bilinirken; bunlarýn 28 tanesi satýn almaz (no), 41 tanesi de satýn alýr (yes) þeklinde tahmin edilmiþtir. (2.satýr)
+905 örneklemli veri kümesi baþarý oraný %89.39 olarak bulunmuþtur.
+
+```{r}
+
+library(tidyverse)
+ggplot(data,aes(x=as.integer(duration),y=as.integer(age)))+geom_bar(stat = "identity",aes(fill=y))
+```
+
+
+
+
+
+
+
+
+
+
